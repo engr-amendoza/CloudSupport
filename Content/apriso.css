@@ -1,0 +1,3451 @@
+@charset "UTF-8";
+@import url("jquery-ui.custom.css");
+@font-face {
+  font-family: '3dsweb';
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/DS_FY_Regular.eot");
+  src: url("fonts/DS_FY_Regular.eot?#iefix") format("embedded-opentype"), url("fonts/DS_FY_Regular.woff") format("woff"), url("fonts/DS_FY_Regular.ttf") format("truetype"), url("fonts/DS_FY_Regular.svg#3dsregular") format("svg");
+}
+
+@font-face {
+  font-family: '3dsweblight';
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/DS_FY_Light.eot");
+  src: url("fonts/DS_FY_Light.eot?#iefix") format("embedded-opentype"), url("fonts/DS_FY_Light.woff") format("woff"), url("fonts/DS_FY_Light.ttf") format("truetype"), url("fonts/DS_FY_Light.svg#3dslight") format("svg");
+}
+
+@font-face {
+  font-family: '3ds';
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/3ds_regular-webfont.eot");
+  src: url("fonts/3ds_regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/3ds_regular-webfont.woff") format("woff"), url("fonts/3ds_regular-webfont.ttf") format("truetype"), url("fonts/3ds_regular-webfont.svg#3dsregular") format("svg");
+}
+
+@font-face {
+  font-family: '3dsitalic';
+  font-style: italic;
+  font-weight: normal;
+  src: url("fonts/3ds_italic-webfont.eot");
+  src: url("fonts/3ds_italic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/3ds_italic-webfont.woff") format("woff"), url("fonts/3ds_italic-webfont.ttf") format("truetype"), url("fonts/3ds_italic-webfont.svg#3dsitalic") format("svg");
+}
+
+@font-face {
+  font-family: '3dssemi';
+  font-style: normal;
+  font-weight: bold;
+  src: url("fonts/3ds_semibold-webfont.eot");
+  src: url("fonts/3ds_semibold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/3ds_semibold-webfont.woff") format("woff"), url("fonts/3ds_semibold-webfont.ttf") format("truetype"), url("fonts/3ds_semibold-webfont.svg#3dssemibold") format("svg");
+}
+
+@font-face {
+  font-family: '3dssemiitalic';
+  font-style: italic;
+  font-weight: bold;
+  src: url("fonts/3ds_semibold_italic-webfont.eot");
+  src: url("fonts/3ds_semibold_italic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/3ds_semibold_italic-webfont.woff") format("woff"), url("fonts/3ds_semibold_italic-webfont.ttf") format("truetype"), url("fonts/3ds_semibold_italic-webfont.svg#3dssemibold_italic") format("svg");
+}
+
+@font-face {
+  font-family: '3dsbold';
+  font-style: normal;
+  font-weight: 900;
+  src: url("fonts/3ds_bold-webfont.eot");
+  src: url("fonts/3ds_bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/3ds_bold-webfont.woff") format("woff"), url("fonts/3ds_bold-webfont.ttf") format("truetype"), url("fonts/3ds_bold-webfont.svg#3dsbold") format("svg");
+}
+
+@font-face {
+  font-family: '3dsbolditalic';
+  font-style: italic;
+  font-weight: 900;
+  src: url("fonts/3ds_bold_italic-webfont.eot");
+  src: url("fonts/3ds_bold_italic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/3ds_bold_italic-webfont.woff") format("woff"), url("fonts/3ds_bold_italic-webfont.ttf") format("truetype"), url("fonts/3ds_bold_italic-webfont.svg#3dsbold_italic") format("svg");
+}
+
+@font-face {
+  font-family: '3dsextralight';
+  font-style: normal;
+  font-weight: 200;
+  src: url("fonts/3ds_extralight-webfont.eot");
+  src: url("fonts/3ds_extralight-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/3ds_extralight-webfont.woff") format("woff"), url("fonts/3ds_extralight-webfont.ttf") format("truetype"), url("fonts/3ds_extralight-webfont.svg#3dsextralight") format("svg");
+}
+
+@font-face {
+  font-family: '3dsextralightitalic';
+  font-style: italic;
+  font-weight: 200;
+  src: url("fonts/3ds_extralight_italic-webfont.eot");
+  src: url("fonts/3ds_extralight_italic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/3ds_extralight_italic-webfont.woff") format("woff"), url("fonts/3ds_extralight_italic-webfont.ttf") format("truetype"), url("fonts/3ds_extralight_italic-webfont.svg#3dsextralight_italic") format("svg");
+}
+
+@font-face {
+  font-family: '3dscondensedregular';
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/3ds_condensed_regular-webfont.eot");
+  src: url("fonts/3ds_condensed_regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/3ds_condensed_regular-webfont.woff") format("woff"), url("fonts/3ds_condensed_regular-webfont.ttf") format("truetype"), url("fonts/3ds_condensed_regular-webfont.svg#3dscondensed") format("svg");
+}
+
+@font-face {
+  font-family: '3dscondensedbold';
+  font-style: normal;
+  font-weight: bold;
+  src: url("fonts/3ds_condensed_bold-webfont.eot");
+  src: url("fonts/3ds_condensed_bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/3ds_condensed_bold-webfont.woff") format("woff"), url("fonts/3ds_condensed_bold-webfont.ttf") format("truetype"), url("fonts/3ds_condensed_bold-webfont.svg#3dscondensed_bold") format("svg");
+}
+
+@font-face {
+  font-family: '3dscondensedlight';
+  font-style: normal;
+  font-weight: 200;
+  src: url("fonts/3ds_condensed_light-webfont.eot");
+  src: url("fonts/3ds_condensed_light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/3ds_condensed_light-webfont.woff") format("woff"), url("fonts/3ds_condensed_light-webfont.ttf") format("truetype"), url("fonts/3ds_condensed_light-webfont.svg#3dscondensed_light") format("svg");
+}
+
+/*!
+ *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+
+/* makes the font 33% larger relative to the icon container */
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+
+/*checboxes and radios */
+/*END: checboxes and radios */
+/* jqModal style overrides */
+/* to override jqueryui icons for font icons */
+
+/* BING Maps overrides */
+
+html {
+  height: 100%;
+  max-height: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  /* hide overflow:hidden from IE5/Mac */
+  /* \*/
+  overflow: hidden;
+  /* */
+}
+
+body {
+  height: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  color: #5B5D5E;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  cursor: default;
+  font-family: arial, lucida, helvetica, sans-serif;
+  font-size: 12px;
+  min-width: 800px;
+  background-color: #F9F9F9;
+}
+
+input, select, button {
+  font-size: 1em;
+}
+
+table.DateTimeCalendar {
+  font-size: 1em !important;
+  /* Infragistics DateTime with Calendar sets inline style to 'font-size: 1px' - need to override that if we want to set 'font-size: 1em' on input */
+}
+
+/* General page elements */
+img {
+  border: 0 none;
+  vertical-align: middle;
+}
+
+.Hidden {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* Default links */
+a:link {
+  color: #42A2DA;
+}
+
+a:visited {
+  color: #42A2DA;
+}
+
+/* Table elements reset */
+table, tr, td, th {
+  border-style: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+th {
+  vertical-align: middle;
+}
+
+iframe {
+  border-width: 0;
+}
+
+.msg {
+  color: #844138;
+}
+
+input[type="text"], input[type="password"], select, textarea {
+  color: #5B5D5E;
+  border: 1px solid #B4B6BA;
+  background: #fff;
+  border-radius: 3px;
+  padding: 0.25em 0.25em;
+}
+
+input[type="text"]:hover, input[type="password"]:hover, select:hover, textarea:hover {
+  color: #5B5D5E;
+  border-color: #5B5D5E;
+}
+
+input[type="text"]:focus, input[type="text"]:active, input[type="password"]:focus, input[type="password"]:active, select:focus, select:active, textarea:focus, textarea:active {
+  color: #5B5D5E;
+  border-color: #368EC4;
+}
+
+/* Buttons */
+input[type="submit"], input[type="button"], a.btn, a.Button, a.SelectedButton, button, input[type="reset"], .Buttons a {
+  margin: 0 2px;
+  border: 1px solid #000;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-family: arial, lucida, helvetica, sans-serif;
+  display: inline-block;
+  text-align: center;
+  border-radius: 3px;
+  padding: 0.25em 0.75em 0.25em 0.75em;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border-color: #B4B6BA;
+  color: #5B5D5E;
+  background: #ececec;
+  background: -moz-linear-gradient(white, #ececec);
+  background: -webkit-linear-gradient(white, #ececec);
+  background: -o-linear-gradient(white, #ececec);
+  background: -ms-linear-gradient(white, #ececec);
+  /*For IE10*/
+  background: linear-gradient(white, #ececec);
+}
+
+input[type="submit"]:hover:not([disabled]), input[type="button"]:hover:not([disabled]), a.btn:hover:not([disabled]), a.Button:hover:not([disabled]), a.SelectedButton:hover:not([disabled]), button:hover:not([disabled]), input[type="reset"]:hover:not([disabled]), .Buttons a:hover:not([disabled]) {
+  border-color: #77797C;
+  color: #5B5D5E;
+  background: lightgray;
+  background: -moz-linear-gradient(#ececec, lightgray);
+  background: -webkit-linear-gradient(#ececec, lightgray);
+  background: -o-linear-gradient(#ececec, lightgray);
+  background: -ms-linear-gradient(#ececec, lightgray);
+  /*For IE10*/
+  background: linear-gradient(#ececec, lightgray);
+}
+
+input[type="submit"]:hover:active:not([disabled]), input[type="submit"]:active:not([disabled]), input[type="submit"].SelectedButton, input[type="button"]:hover:active:not([disabled]), input[type="button"]:active:not([disabled]), input[type="button"].SelectedButton, a.btn:hover:active:not([disabled]), a.btn:active:not([disabled]), a.btn.SelectedButton, a.Button:hover:active:not([disabled]), a.SelectedButton:hover:active:not([disabled]), a.Button:active:not([disabled]), a.SelectedButton:active:not([disabled]), a.Button.SelectedButton, a.SelectedButton, button:hover:active:not([disabled]), button:active:not([disabled]), button.SelectedButton, input[type="reset"]:hover:active:not([disabled]), input[type="reset"]:active:not([disabled]), input[type="reset"].SelectedButton, .Buttons a:hover:active:not([disabled]), .Buttons a:active:not([disabled]), .Buttons a.SelectedButton {
+  border-color: #368EC4;
+  color: #5B5D5E;
+  background: #ececec;
+  background: -moz-linear-gradient(lightgray, #ececec);
+  background: -webkit-linear-gradient(lightgray, #ececec);
+  background: -o-linear-gradient(lightgray, #ececec);
+  background: -ms-linear-gradient(lightgray, #ececec);
+  /*For IE10*/
+  background: linear-gradient(lightgray, #ececec);
+}
+
+input.Primary, a.Button.Primary, a.Primary.SelectedButton {
+  margin: 0 2px;
+  border: 1px solid #000;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-family: arial, lucida, helvetica, sans-serif;
+  display: inline-block;
+  text-align: center;
+  border-radius: 3px;
+  padding: 0.25em 0.75em 0.25em 0.75em;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border-color: #003C5A;
+  color: #fff;
+  background: #0066a0;
+  background: -moz-linear-gradient(#0087d3, #0066a0);
+  background: -webkit-linear-gradient(#0087d3, #0066a0);
+  background: -o-linear-gradient(#0087d3, #0066a0);
+  background: -ms-linear-gradient(#0087d3, #0066a0);
+  /*For IE10*/
+  background: linear-gradient(#0087d3, #0066a0);
+}
+
+input.Primary:hover:not([disabled]), a.Button.Primary:hover:not([disabled]), a.Primary.SelectedButton:hover:not([disabled]) {
+  border-color: #003C5A;
+  color: #fff;
+  background: #00466d;
+  background: -moz-linear-gradient(#0066a0, #00466d);
+  background: -webkit-linear-gradient(#0066a0, #00466d);
+  background: -o-linear-gradient(#0066a0, #00466d);
+  background: -ms-linear-gradient(#0066a0, #00466d);
+  /*For IE10*/
+  background: linear-gradient(#0066a0, #00466d);
+}
+
+input.Primary:hover:active:not([disabled]), input.Primary:active:not([disabled]), a.Button.Primary:hover:active:not([disabled]), a.Primary.SelectedButton:hover:active:not([disabled]), a.Button.Primary:active:not([disabled]), a.Primary.SelectedButton:active:not([disabled]) {
+  border-color: #003C5A;
+  color: #fff;
+  background: #0066a0;
+  background: -moz-linear-gradient(#00466d, #0066a0);
+  background: -webkit-linear-gradient(#00466d, #0066a0);
+  background: -o-linear-gradient(#00466d, #0066a0);
+  background: -ms-linear-gradient(#00466d, #0066a0);
+  /*For IE10*/
+  background: linear-gradient(#00466d, #0066a0);
+}
+
+a.Large {
+  padding: 0.4em 1em 0.4em 1em;
+  height: 2em;
+}
+
+input[type="radio"][readonly],
+input[type="radio"][readonly] + label,
+input[type="checkbox"][readonly],
+input[type="checkbox"][readonly] + label {
+  cursor: default !important;
+  filter: alpha(opacity=60);
+  /* For IE8 and earlier */
+  opacity: 0.6;
+}
+
+a[disabled],
+input[disabled],
+button[disabled],
+select[disabled],
+textarea[disabled],
+a[readonly],
+input[readonly],
+button[readonly],
+select[readonly],
+textarea[readonly],
+input[type="radio"][disabled],
+input[type="radio"][disabled] + label,
+input[type="checkbox"][disabled],
+input[type="checkbox"][disabled] + label,
+.DisabledButton {
+  cursor: default !important;
+  filter: alpha(opacity=40);
+  /* For IE8 and earlier */
+  opacity: 0.4;
+}
+
+textarea {
+  margin: 2px 0px;
+  font-family: arial, lucida, helvetica, sans-serif;
+  font-size: 1em;
+}
+
+.icon {
+  margin-left: -70px;
+  float: left;
+  padding: 3px;
+}
+
+.iconBig {
+  margin-top: 5px;
+  margin-left: -48px;
+  float: left;
+  padding: 3px;
+}
+
+/* Headings */
+.Title, .Subtitle, h1, h2, h3, h4, h5, h6 {
+  color: #5B5D5E;
+  font-family: "3dsweb", arial, lucida, helvetica, sans-serif;
+  font-weight: normal;
+}
+
+h5, h6 {
+  color: #B4B6BA;
+}
+
+.Title {
+  font-size: 1.5em;
+}
+
+.Subtitle {
+  font-size: 1em;
+}
+
+h1 {
+  font-size: 1.9375em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.1875em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+/* End of headings */
+.inputError, .InputError {
+  background: #fff url("images/icons_sprite.png") -94px -78px no-repeat 99%;
+}
+
+.Messages, .Errors {
+  position: relative;
+  margin: -3px 0;
+  margin-bottom: 3px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.Messages div + div {
+  border-top: 0;
+}
+
+.Messages .ErrorMessage, .Errors .ErrorMessage {
+  color: #fff !important;
+}
+
+.ErrorMessageSummary, .WarningMessageSummary, .InfoMessageSummary, .errorMsg, .infoMsg, .warningMsg, .Errors {
+  position: relative;
+  display: block;
+  font-size: 1.2em;
+  font-weight: normal;
+  padding: 2px 2px 2px 0;
+  text-align: left;
+  z-index: 300000;
+}
+
+.ErrorMessageIcon, .WarningMessageIcon, .InfoMessageIcon, .QuestionMessageIcon {
+  float: left;
+  width: 22px;
+  height: 18px;
+  background: url("images/icons_sprite.png");
+  background-repeat: no-repeat;
+  margin-top: 1px;
+}
+
+.ErrorMessageBigIcon, .WarningMessageBigIcon, .InfoMessageBigIcon, .QuestionMessageBigIcon {
+  float: left;
+  width: 26px;
+  height: 26px;
+  background: url("images/icons_sprite.png");
+  background-repeat: no-repeat;
+}
+
+.ErrorMessageIcon {
+  background-position: -92px -78px;
+}
+
+.ErrorMessageBigIcon {
+  background-position: -96px -96px;
+}
+
+.WarningMessageIcon {
+  background-position: -60px -78px;
+}
+
+.WarningMessageBigIcon {
+  background-position: -64px -96px;
+}
+
+.InfoMessageIcon {
+  background-position: 0px -78px;
+}
+
+.InfoMessageBigIcon {
+  background-position: 0px -96px;
+}
+
+.QuestionMessageIcon {
+  background-position: -32px -78px;
+}
+
+.QuestionMessageBigIcon {
+  background-position: -32px -96px;
+}
+
+.ErrorMessageSummary, .errorMsg, .ErrorMessage {
+  color: #fff !important;
+  background: #c4282f;
+}
+
+.ui-dialog .ErrorMessageSummary, .ui-dialog .errorMsg, .ui-dialog .ErrorMessage {
+  color: red !important;
+}
+
+.ui-dialog .ErrorMessageSummary span, .ui-dialog .errorMsg span, .ui-dialog .ErrorMessage span {
+  line-height: 21px;
+}
+
+.ui-dialog .ErrorMessageIcon {
+  margin-top: 0;
+}
+
+.WarningMessageSummary, .warningMsg {
+  color: #000;
+  background: #ffff80;
+}
+
+.InfoMessageSummary, .infoMsg {
+  color: #fff;
+  background: #8f96ae;
+}
+
+.ErrorMessageSummary, .Errors {
+  line-height: 22px;
+  cursor: pointer;
+}
+
+.ErrorMessageSummary ul, .Errors ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ErrorMessageSummary .errorMsg, .Errors .errorMsg {
+  background: transparent;
+  position: static;
+  border: none;
+  display: inline;
+}
+
+.ErrorMessageSummary:hover div.errorCloseButton span.notify-close, .Errors:hover div.errorCloseButton span.notify-close {
+  background: url("images/icons_sprite.png") no-repeat scroll 0 -16px transparent;
+}
+
+/* Close Button for error message */
+div.errorCloseButton {
+  float: none;
+  position: relative;
+  text-align: right;
+}
+
+div.errorCloseButton span.notify-close {
+  cursor: pointer;
+  display: block;
+  float: right;
+  margin-right: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+  text-decoration: none;
+  margin-top: 2px;
+  line-height: 16px;
+  background: url("images/icons_sprite.png") no-repeat scroll 0 0 transparent;
+  height: 16px;
+  width: 8px;
+}
+
+.ErrorMessageSummary {
+  display: none;
+}
+
+/* FDC error message in dashboard view */
+.FDCContext .errorRendererMessage {
+  color: #808080;
+  font-size: 14px;
+  font-family: "Segoe UI", serif;
+}
+
+/*!
+ *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+
+/* makes the font 33% larger relative to the icon container */
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+
+/*checboxes and radios */
+/*END: checboxes and radios */
+/* jqModal style overrides */
+/* to override jqueryui icons for font icons */
+
+/* BING Maps overrides */
+
+/* Links for StartLogin page */
+.ApplicationTitle {
+  color: darkblue;
+  font-size: 34px;
+}
+
+#closeButton {
+  background: url("images/graphics_sprite.png") -500px -520px;
+  width: 24px;
+  height: 24px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+/* Misc */
+.FunctionToolbar > div#tcLeft, .FunctionToolbar > div#tcRight {
+  position: absolute;
+  width: 20px;
+  height: 66px;
+  z-index: 99;
+  background: #e6e4d4 url("images/graphics_sprite.png") 0 -415px;
+  border: #a8a8a8 solid 1px;
+}
+
+.FunctionToolbar > div#tcLeft:hover, .FunctionToolbar > div#tcRight:hover {
+  background: #B2AE94 url("images/graphics_sprite.png") 0 -415px;
+}
+
+#tcRight {
+  right: 0;
+  top: 0;
+}
+
+#imgRight {
+  background: url("images/icons_sprite.png") -78px 3px no-repeat;
+}
+
+#imgRight:hover {
+  background: url("images/icons_sprite.png") -78px -13px no-repeat;
+}
+
+#imgLeft {
+  background: url("images/icons_sprite.png") -63px 3px no-repeat;
+}
+
+#imgLeft:hover {
+  background: url("images/icons_sprite.png") -63px -13px no-repeat;
+}
+
+#imgRight, #imgLeft {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+}
+
+.FunctionToolbar .disabled {
+  display: none;
+}
+
+#Resource {
+  color: #000;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+}
+
+/* Opens conrimation dialog before postback */
+.ConfirmButton {
+  cursor: hand;
+}
+
+.Section {
+  display: block;
+  padding: 5px 0 3px 0;
+  font-size: medium;
+}
+
+.SmallText {
+  font-size: 11;
+}
+
+.SubTitle {
+  font-size: 15px;
+  color: black;
+}
+
+.PanelHeader2 {
+  background-color: blue;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-family: Verdana,Arial,Sans-Serif;
+  font-size: 1pt;
+}
+
+.PanelContent {
+  padding: 0,0,0,0;
+  border-color: #cccccc;
+  border-style: solid;
+  border-top: 0;
+  border-width: 1;
+}
+
+.InlineHelp {
+  font-family: Arial,Helvetica,Sans-Serif;
+  font-size: 11px;
+  color: Blue;
+  font-style: italic;
+}
+
+.TreeNode {
+  font-family: Arial,Sans-Serif;
+  font-size: 11pt;
+}
+
+.SeparatorHeader {
+  font-weight: normal;
+  font-family: Arial,Sans-Serif;
+  font-size: 12;
+}
+
+.MobileTitle {
+  color: black;
+  font-weight: bold;
+}
+
+.PushButton {
+  font-family: tahoma,sans-serif;
+  font-size: 11px;
+  background: #D6E7EF;
+  border-bottom: 1px solid #104A7B;
+  border-right: 1px solid #104A7B;
+  border-left: 1px solid #AFC4D5;
+  border-top: 1px solid #AFC4D5;
+  color: #000066;
+  height: 19px;
+  text-decoration: none;
+  cursor: hand;
+}
+
+.foB {
+  color: #07336C;
+  font-size: 11px;
+  font-weight: bold;
+  background: #D7ECFE;
+  border: solid 1;
+  border-color: #07336C;
+}
+
+a.ExplorerItem {
+  color: Black;
+  font-size: 11px;
+  font-family: Verdana,Arial,Sans-Serif;
+  text-decoration: None;
+}
+
+a.ExplorerItem:link {
+  color: MidnightBlack;
+  text-decoration: none;
+}
+
+a.ExplorerItem:hover {
+  color: Black;
+  text-decoration: underline;
+}
+
+/* a.ExplorerItem:visited { color:MidnightBlack; text-decoration:none; } */
+a.ExplorerSelectedItem {
+  padding-bottom: 1px;
+  padding-top: 1px;
+  padding-left: 2px;
+  padding-right: 2px;
+  font-family: Verdana,Arial,Sans-Serif;
+  font-size: 11;
+  text-decoration: none;
+}
+
+a.ExplorerSelectedItem:link {
+  color: White;
+  background-color: Blue;
+  text-decoration: None;
+}
+
+a.ExplorerSelectedItem:hover {
+  color: blue;
+  text-decoration: underline;
+  background-color: Silver;
+}
+
+/* a.ExplorerSelectedItem:visited    { color:White; text-decoration:None; background-color:Blue; }     */
+.ListBox {
+  width: 100%;
+  border: 1px solid #FFFFFF;
+  font-size: 10px;
+  font-family: Verdana,Arial,Sans-Serif;
+}
+
+/* Personalization page ?? */
+a.HeaderLink {
+  font-size: 120%;
+}
+
+.Image, .ToolbarImage, .ExplorerImage {
+  cursor: hand;
+}
+
+.GroupBoxHeader {
+  position: relative;
+  left: 8px;
+  top: 6px;
+  padding: 0 4px;
+  background: white;
+}
+
+.GroupBox {
+  border: #ccc 1px solid;
+  padding: 6px;
+  margin-bottom: 8px;
+}
+
+.GroupBox label {
+  display: inline-block;
+  margin-right: 15px;
+  /* separate radio items in group box */
+}
+
+div.fullWidth {
+  width: 100%;
+}
+
+div.left {
+  /*float:left;*/
+}
+
+div.right {
+  float: right;
+}
+
+.mimg {
+  height: 20px;
+  width: 20px;
+}
+
+.dinl {
+  display: inline;
+}
+
+.dblk {
+  display: block;
+}
+
+.divider_line {
+  border-top-style: solid;
+  border-top-width: 1px;
+  color: gray;
+}
+
+#containerTable {
+  table-layout: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+#panelContainerTable {
+  /*border-collapse:separate;
+    border-spacing:3px;*/
+  table-layout: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+#ExplorerPanel td.selectedStep table {
+  table-layout: fixed;
+}
+
+.groupSeparator, .SeparatorHeader {
+  margin: 0 0 10px 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.PopupInput {
+  border: solid 1px #a8a8a8;
+  color: Black;
+  font-size: small;
+}
+
+.PopupInput ~ * {
+  vertical-align: top;
+}
+
+.WorkInstructionsPaneRight {
+  float: right;
+}
+
+.WorkInstructionsPaneLeft {
+  float: left;
+}
+
+.InlineWorkInstructionsPanel {
+  overflow: auto;
+}
+
+.DefaultButtonCell input {
+  height: 20px;
+  margin: 0;
+  line-height: 20px;
+  padding: 0;
+  font-size: 12px;
+}
+
+/* Generic styles for tables in grids */
+.GridWrap table td {
+  padding: 2px;
+}
+
+/*Specific rules for details in grid */
+.MovingButtonsTable td {
+  padding: 0;
+}
+
+.ColumnsEditorWrap select, .OrderEditorWrap select, .SelectList {
+  width: 300px;
+}
+
+#PersonalizeGridColumns td.ProfileTypeWrap select {
+  width: 200px;
+  float: left;
+}
+
+.SetAsDefaultInlineWrap {
+  display: none;
+  /* Hidden for now, but could be useful in the future */
+  text-align: left;
+  width: 200px;
+  float: left;
+  margin: 3px 0 0 20px;
+}
+
+#PersonalizeGridSortTable {
+  width: 660px;
+}
+
+/* Filters */
+#PersonalizeGridFilterTable {
+  width: 635px;
+}
+
+.RegularFilterWrap {
+  overflow: auto;
+  width: 100%;
+  max-height: 150px;
+  margin-left: 20px;
+}
+
+.CustomFilterBox {
+  width: 99%;
+  height: 94px;
+  margin-left: 20px;
+}
+
+/* End of filters */
+.SubmitButtons {
+  margin: 10px 20px;
+}
+
+.PersonalizationCloseButtonContainer {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  z-index: 100;
+}
+
+.PersonalizationCloseButtonContainer a {
+  color: #000;
+}
+
+.PersonalizationCloseButtonContainer a:hover {
+  color: #333;
+}
+
+.divClear {
+  clear: both;
+}
+
+#report_div {
+  margin: 0 auto;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 20px;
+  width: 100%;
+  text-align: center;
+  line-height: 20px;
+  font-size: small;
+  border-top: #e0e0e0 solid 1px;
+  background-color: #f4f4f4;
+}
+
+.ModalIFrame {
+  width: 100%;
+  height: 95%;
+  border: 0;
+}
+
+.ReportIFrame {
+  width: 99.9%;
+  /*beware the padding in ContentPane*/
+  height: 99%;
+}
+
+.WarningModalIconParent {
+  padding-top: 20px;
+  padding-left: 48px;
+  padding-right: 14px;
+}
+
+/* Date Time Picker */
+.DateTime {
+  display: inline-block;
+  border: 0 solid #B4B6BA !important;
+  margin-top: 2px;
+}
+
+.DateTime .DateTime {
+  margin: 0px;
+}
+
+.DateTime > tbody > tr > td {
+  vertical-align: middle;
+}
+
+.DateTime input {
+  border: 1px solid #B4B6BA !important;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.DateTime input:hover {
+  border: 1px solid #5B5D5E !important;
+}
+
+.DateTime input:focus, .DateTime input:active {
+  border: 1px solid #368EC4 !important;
+}
+
+.DateTime input::-ms-clear {
+  display: none;
+}
+
+.DateTime table {
+  border-collapse: initial;
+  width: 1.5em;
+}
+
+.DateTime table > tbody > tr:first-child > .DateTimeEditorButton {
+  border-top-right-radius: 3px;
+}
+
+.DateTime table > tbody > tr:last-child > .DateTimeEditorButton {
+  border-top-width: 0px !important;
+  border-bottom-right-radius: 3px;
+}
+
+table.DateTimeDisabled table td {
+  border-color: #dde1e2 !important;
+  border-style: solid;
+}
+
+table.DateTimeDisabled table > tbody > tr:nth-child(2) td:first-child {
+  border-bottom-right-radius: 3px;
+  border-left-style: none;
+  opacity: 0.6;
+  border-width: 1px;
+}
+
+table.DateTimeDisabled table > tbody > tr:first-child td:first-child {
+  border-top-right-radius: 3px;
+  border-left-style: none;
+  opacity: 0.6;
+  border-width: 1px;
+}
+
+/*Code below will replace code above for WebKit browsers only*/
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .DateTime {
+    display: inline-block !important;
+  }
+}
+
+.DateTimeEditorButton {
+  border-width: 1px 1px 1px 0 !important;
+  border-style: solid !important;
+  border-color: #B4B6BA !important;
+  background: #E2E4E3;
+  background: -moz-linear-gradient(#F9F9F9, #E2E4E3);
+  background: -webkit-linear-gradient(#F9F9F9, #E2E4E3);
+  background: -o-linear-gradient(#F9F9F9, #E2E4E3);
+  background: -ms-linear-gradient(#F9F9F9, #E2E4E3);
+  /*For IE10*/
+  background: linear-gradient(#F9F9F9, #E2E4E3);
+}
+
+.DateTimeEditorButton:hover {
+  background: #D1D4D4;
+  background: -moz-linear-gradient(#F1F1F1, #D1D4D4);
+  background: -webkit-linear-gradient(#F1F1F1, #D1D4D4);
+  background: -o-linear-gradient(#F1F1F1, #D1D4D4);
+  background: -ms-linear-gradient(#F1F1F1, #D1D4D4);
+  /*For IE10*/
+  background: linear-gradient(#F1F1F1, #D1D4D4);
+}
+
+.DateTimeEditorButton:focus, .DateTimeEditorButton:active {
+  background: #F4F5F6;
+  background: -moz-linear-gradient(#E2E4E3, #F4F5F6);
+  background: -webkit-linear-gradient(#E2E4E3, #F4F5F6);
+  background: -o-linear-gradient(#E2E4E3, #F4F5F6);
+  background: -ms-linear-gradient(#E2E4E3, #F4F5F6);
+  /*For IE10*/
+  background: linear-gradient(#E2E4E3, #F4F5F6);
+}
+
+.DateTimeEditorButton img {
+  margin: 1px 0 0 1px;
+  opacity: 0.61;
+}
+
+/* Opening FlexPart with Operation in Portal */
+#ContentPane #ContentPane {
+  position: static;
+}
+
+/*!
+ *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+
+/* makes the font 33% larger relative to the icon container */
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+
+/*checboxes and radios */
+/*END: checboxes and radios */
+/* jqModal style overrides */
+/* to override jqueryui icons for font icons */
+
+/* BING Maps overrides */
+
+.GridStyle {
+  border: 1px solid #B4B6BA;
+  width: 100%;
+  background-color: #fff;
+  border-collapse: collapse;
+  margin-bottom: 5px;
+}
+
+.GridStyle td, .GridStyle th {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
+  border: none;
+}
+
+.GridStyle tr {
+  color: #5B5D5E;
+  background-color: #fff;
+}
+
+.GridStyle tr:hover {
+  background-color: #e2e4e3;
+}
+
+/*Reports Infragistic IE11 hack*/
+.GridStyle .DateTime table {
+  height: 21px !important;
+}
+
+/* Alert list, e.g*/
+.gridHeader td, .gridHeader th {
+  color: #5B5D5E;
+  border: #B4B6BA solid 1px;
+  background-origin: padding-box;
+  background-clip: padding-box;
+  background: #E2E4E3;
+  background: -moz-linear-gradient(#F9F9F9, #E2E4E3);
+  background: -webkit-linear-gradient(#F9F9F9, #E2E4E3);
+  background: -o-linear-gradient(#F9F9F9, #E2E4E3);
+  background: -ms-linear-gradient(#F9F9F9, #E2E4E3);
+  /*For IE10*/
+  background: linear-gradient(#F9F9F9, #E2E4E3);
+}
+
+tr.alternateGridRow {
+  background-color: #F4F5F6;
+}
+
+.GridStyle .gridSelectedItem {
+  background-color: #D1D4D4;
+}
+
+#GridPlaceholder .gridRow:hover, #GridPlaceholder .alternateGridRow:hover, #GridPlaceholder .gridSelectedItem:hover {
+  cursor: pointer;
+}
+
+.gridSelectedItem select {
+  margin-left: 0px;
+}
+
+.gridSelectedItem input {
+  margin-left: 0px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+
+.gridSelectedItem td {
+  margin-bottom: 2px;
+  padding-left: 0px;
+}
+
+.gridSelectedItem img {
+  margin-left: 3px;
+}
+
+.gridSelectedItem span {
+  padding-left: 3px;
+}
+
+.gridRow select, .gridRow input[type="text"], .alternateGridRow select, .alternateGridRow input[type="text"] {
+  margin-left: -3px;
+}
+
+/* Module has margin itself, group separator doesn't need to */
+.Module .groupSeparator, .Module .SeparatorHeader {
+  margin: 0;
+}
+
+.groupSeparator .header, .SeparatorHeader .header {
+  white-space: nowrap;
+}
+
+.groupSeparator .header > *, .SeparatorHeader .header > * {
+  display: inline;
+}
+
+.groupSeparator .header > *, .groupSeparator .header .separatorInfo > *, .SeparatorHeader .header > *, .SeparatorHeader .header .separatorInfo > * {
+  vertical-align: middle;
+}
+
+.groupSeparator .header .separatorInfo > img {
+  width: 16px;
+  height: 16px;
+}
+
+.groupSeparator .header > img.expandImage, .SeparatorHeader .header > img.expandImage {
+  cursor: hand;
+}
+
+.groupSeparator .header .separatorInfo > span, .SeparatorHeader .header .separatorInfo > span {
+  padding-left: 5px;
+}
+
+.groupSeparator .header .separatorInfo > span + span, .SeparatorHeader .header .separatorInfo > span + span {
+  color: #B8BABA;
+}
+
+.groupSeparator .header {
+  padding: 2px 0;
+}
+
+.groupSeparator .content {
+  margin: 3px 16px;
+}
+
+.filterEditor .customFilterContainer {
+  padding: 0 6px 0 0;
+}
+
+.filterEditor .customFilterContainer textarea {
+  width: 100%;
+  margin-top: 3px;
+}
+
+.filterEditor input[type="radio"] {
+  vertical-align: bottom;
+}
+
+table#taskHeaderInfo td {
+  padding: 2px 10px;
+}
+
+table#taskHeaderInfo td.value {
+  color: #70716b;
+  font-weight: bold;
+  padding: 2px 10px 2px 2px;
+}
+
+.StdToolbar_Buttons {
+  background-image: url("images/icons_sprite.png");
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+
+.StdToolbar_AddButton {
+  background-position: -32px 0;
+}
+
+.StdToolbar_AddButton:hover {
+  background-position: -32px -64px;
+}
+
+.StdToolbar_RemoveButton {
+  background-position: -48px 0;
+}
+
+.StdToolbar_RemoveButton:hover {
+  background-position: -48px -64px;
+}
+
+.StdToolbar_CopyButton {
+  background-position: -192px 0;
+}
+
+.StdToolbar_CopyButton:hover {
+  background-position: -192px -64px;
+}
+
+.StdToolbar_SetAsDefaultButton {
+  background-position: -16px 0;
+}
+
+.StdToolbar_SetAsDefaultButton:hover {
+  background-position: -16px -64px;
+}
+
+.StdToolbar_SingleItemToRight {
+  background-position: -80px 0;
+}
+
+.StdToolbar_SingleItemToRight:hover {
+  background-position: -80px -64px;
+}
+
+.StdToolbar_AllItemsToRight {
+  background-position: -176px 0;
+}
+
+.StdToolbar_AllItemsToRight:hover {
+  background-position: -176px -64px;
+}
+
+.StdToolbar_SingleItemToLeft {
+  background-position: -64px 0;
+}
+
+.StdToolbar_SingleItemToLeft:hover {
+  background-position: -64px -64px;
+}
+
+.StdToolbar_AllItemsToLeft {
+  background-position: -160px 0;
+}
+
+.StdToolbar_AllItemsToLeft:hover {
+  background-position: -160px -64px;
+}
+
+.StdToolbar_ItemUp {
+  background-position: -96px 0;
+}
+
+.StdToolbar_ItemUp:hover {
+  background-position: -96px -64px;
+}
+
+.StdToolbar_ItemDown {
+  background-position: -112px 0;
+}
+
+.StdToolbar_ItemDown:hover {
+  background-position: -112px -64px;
+}
+
+.PersonalizationGridProfile_Buttons {
+  background-image: url("images/icons_sprite.png");
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+
+.PersonalizationGridProfile_AddButton {
+  background-position: -32px 0;
+}
+
+.PersonalizationGridProfile_AddButton:hover {
+  background-position: -32px -64px;
+}
+
+.PersonalizationGridProfile_RemoveButton {
+  background-position: -48px 0;
+}
+
+.PersonalizationGridProfile_RemoveButton:hover {
+  background-position: -48px -64px;
+}
+
+.PersonalizationGridProfile_CopyButton {
+  background-position: -192px 0;
+}
+
+.PersonalizationGridProfile_CopyButton:hover {
+  background-position: -192px -64px;
+}
+
+.PersonalizationGridProfile_SetAsDefaultButton {
+  background-position: -16px 0;
+}
+
+.PersonalizationGridProfile_SetAsDefaultButton:hover {
+  background-position: -16px -64px;
+}
+
+.PersonalizationGridProfile_SingleItemToRight {
+  background-position: -80px 0;
+}
+
+.PersonalizationGridProfile_SingleItemToRight:hover {
+  background-position: -80px -64px;
+}
+
+.PersonalizationGridProfile_AllItemsToRight {
+  background-position: -176px 0;
+}
+
+.PersonalizationGridProfile_AllItemsToRight:hover {
+  background-position: -176px -64px;
+}
+
+.PersonalizationGridProfile_SingleItemToLeft {
+  background-position: -64px 0;
+}
+
+.PersonalizationGridProfile_SingleItemToLeft:hover {
+  background-position: -64px -64px;
+}
+
+.PersonalizationGridProfile_AllItemsToLeft {
+  background-position: -160px 0;
+}
+
+.PersonalizationGridProfile_AllItemsToLeft:hover {
+  background-position: -160px -64px;
+}
+
+.PersonalizationGridProfile_ItemUp {
+  background-position: -96px 0;
+}
+
+.PersonalizationGridProfile_ItemUp:hover {
+  background-position: -96px -64px;
+}
+
+.PersonalizationGridProfile_ItemDown {
+  background-position: -112px 0;
+}
+
+.PersonalizationGridProfile_ItemDown:hover {
+  background-position: -112px -64px;
+}
+
+#gridButtons {
+  display: inline;
+  position: absolute;
+  right: 0;
+}
+
+#gridButtons > * {
+  vertical-align: middle;
+}
+
+.listControlPanel {
+  display: block;
+  position: relative;
+  margin-top: 2px;
+  margin-bottom: 5px;
+}
+
+.listControlPanel select {
+  width: 160px;
+}
+
+.gridUpdateProgress {
+  position: fixed;
+  left: 50%;
+  top: 35px;
+}
+
+.GridScrollBox {
+  background-color: white;
+  border: solid 1px #CCC;
+  overflow: auto;
+}
+
+.GridFooter {
+  color: black;
+  background-color: #CC9;
+}
+
+/* Button styles and behaviors */
+.GridButton {
+  cursor: hand;
+}
+
+.GridButtonColumn {
+  display: none;
+}
+
+/* Default grid styles to be used with DataGrid .NET control*/
+div#GridPlaceholder, div#CIMGrid {
+  margin: 0;
+}
+
+/*Browser attachment control*/
+.BusinessAttachmentBrowserContainer .gridHeader th {
+  border-style: solid !important;
+  padding: 4px 0;
+}
+
+.BusinessAttachmentBrowserContainer .gridHeader td {
+  background: none;
+}
+
+/*!
+ *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+
+/* makes the font 33% larger relative to the icon container */
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+
+/*checboxes and radios */
+/*END: checboxes and radios */
+/* jqModal style overrides */
+/* to override jqueryui icons for font icons */
+
+/* BING Maps overrides */
+
+/*Layout*/
+#ui-datepicker-div{
+  z-index: 5 !important;
+}
+
+#centerPane {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.contentPaneContainer {
+  overflow: auto;
+  position: absolute;
+  padding: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#headerInfo {
+  font-family: '3dsweb', Arial, lucida, helvetica, sans-serif;
+  color: #fff;
+  position: fixed;
+  z-index: 50;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 41px;
+  line-height: 41px;
+  background: #005686;
+  border-top: solid 1px #6599b6;
+  border-bottom: solid 1px #004971;
+  box-shadow: 0px 1px 0px 0px rgba(155, 155, 155, 0.3);
+}
+
+#title {
+  text-align: left;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+#title .logo {
+  width: 32px;
+  height: 32px;
+  margin-top: 5px;
+  margin-left: 16px;
+  position: absolute;
+  background: #005686 url("images/header_sprite.png") no-repeat;
+}
+
+#title .logo + span {
+  vertical-align: middle;
+  display: inline-block;
+  padding: 0 0 0 70px;
+  margin-top: -5px;
+}
+
+.toolbarButton {
+  background-image: url("images/header_sprite.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 5px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+
+.toolbarButton:hover {
+  background-color: #F4F5F6;
+  border-color: #F4F5F6;
+}
+
+#backButton {
+  background-position: 0px -128px;
+}
+
+#backButton:hover {
+  background-position: -32px -128px;
+}
+
+.InfoPane a:hover {
+  color: #fff;
+}
+
+.InfoPane .separator {
+  width: 5px;
+  height: 18px;
+  margin: 8px 3px -5px 3px;
+  background: transparent url("images/graphics_sprite.png") -526px -519px no-repeat;
+  display: inline-block;
+}
+
+.headerPaneContainer {
+  position: absolute;
+  margin: 0;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 34px;
+  z-index: 5;
+  overflow: hidden;
+  text-align: right;
+  vertical-align: middle;
+}
+
+#aprisoInfo {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  height: 26px;
+  width: 170px;
+  background: url("images/graphics_sprite.png") -400px -618px no-repeat;
+}
+
+.toolbarPaneContainer {
+  position: absolute;
+  margin: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 68px;
+  z-index: 5;
+}
+
+.leftPaneContainer {
+  position: absolute;
+  left: 4px;
+  top: 0;
+  width: 200px;
+  z-index: 4;
+  overflow: auto;
+}
+
+.rightPaneContainer {
+  position: absolute;
+  right: 4px;
+  top: 0;
+  bottom: 0;
+  width: 200px;
+  z-index: 4;
+  overflow: auto;
+}
+
+#HeaderPaneContainer ~ #centerPane {
+  top: 34px;
+}
+
+.toolbarPaneContainer + #centerPane {
+  bottom: 70px;
+}
+
+#centerPane .rightPaneContainer + .contentPaneContainer {
+  right: 210px;
+}
+
+#centerPane .leftPaneContainer ~ .contentPaneContainer {
+  left: 210px;
+}
+
+#headerInfo ~ #centerPane, #headerInfo + .headerPaneContainer {
+  top: 41px;
+}
+
+#headerInfo + .headerPaneContainer ~ #centerPane {
+  top: 75px;
+}
+
+.Module .TaskHeaderPanel {
+  margin: 2px 4px;
+  background-color: #fff;
+  border: 1px solid #E2E4E3;
+  border-radius: 3px;
+  margin-top: 1px;
+  /* Just to make shadow visible */
+  top: 0px;
+  bottom: 0px;
+}
+
+.toolbarList li .ToolbarBackButton {
+  background: url("images/icons_sprite.png") 3px -127px no-repeat;
+  min-width: 28px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+/*Toolbar back button*/
+.explorerList li .ToolbarBackButton {
+  background: url("images/icons_sprite.png") 3px -128px no-repeat;
+  padding-top: 6px;
+  margin-top: 2px;
+}
+
+#centerPane .ToolbarBackButton:hover {
+  background: #E2E4E3 url("images/icons_sprite.png") 3px -128px no-repeat;
+}
+
+/* Portal panel settings */
+#TransactionPage {
+  height: 100%;
+}
+
+.InfoPane {
+  height: 100%;
+}
+
+.userInfoPanel {
+  position: absolute;
+  top: 4px;
+  right: 8px;
+  display: inline-block;
+  line-height: 35px;
+}
+
+.userInfoPanel span, .userInfoPanel a {
+  vertical-align: top;
+}
+
+.InfoPane .userInfoPanel a {
+  cursor: pointer;
+}
+
+.InfoPane .userInfoPanel a:hover {
+  color: #fff;
+}
+
+.userInfoName {
+  cursor: pointer;
+}
+
+.TopBarUserLink:hover {
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+.TopBarUserLink {
+  background-position: 0 -224px;
+}
+
+.TopBarUserLink div {
+  background-size: 22px;
+  position: absolute;
+  margin: 5px;
+  width: 22px;
+  height: 22px;
+  border-radius: 2px;
+}
+
+.TopBarHomeLink {
+  background-position: 0 -32px;
+}
+
+.TopBarHomeLink:hover {
+  background-position: -32px -32px;
+}
+
+.TopBarAboutLink {
+  background-position: 0px -64px;
+}
+
+.TopBarAboutLink:hover {
+  background-position: -32px -64px;
+}
+
+.tabLayoutBody .mainTable {
+  width: 100%;
+}
+
+.tabLayoutBody #ContentPane {
+  margin: 0;
+}
+
+.leftPaneContainer, .rightPaneContainer, .contentPaneContainer {
+  background-color: #fff;
+  border: 1px solid #E2E4E3;
+  border-radius: 3px;
+  margin-top: 1px;
+  /* Just to make shadow visible */
+  top: 0;
+  bottom: 0;
+}
+
+.contentPaneContainer {
+  margin-top: 0;
+}
+
+.leftPaneContainer, .rightPaneContainer {
+  overflow: auto;
+}
+
+.ApplicationPane {
+  margin: 2px 2px 0 0;
+}
+
+#ToolbarPaneContainer #ToolbarPane, #ToolbarPaneContainer #ToolbarPane .FunctionToolbar, .FunctionToolbar > div, .FunctionToolbar .toolbarContainer, ul.toolbarList, .ApplicationPane, .ApplicationPane > div {
+  min-height: 34px;
+}
+
+.toolbarContainer {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#ToolbarPane {
+  padding: 0 1px;
+  position: relative;
+}
+
+#ContentPane {
+  position: absolute;
+  top: 3px;
+  bottom: 3px;
+  left: 3px;
+  right: 3px;
+  display: block;
+  z-index: 1;
+}
+
+.Module, .FillModule {
+  display: block;
+  position: relative;
+  padding: 0;
+}
+
+.Module + .Module {
+  margin: 6px 0 0 0;
+}
+
+.FillModule {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.Module + .FillModule, .FillModule + .FillModule {
+  height: auto;
+}
+
+.FillModule > iframe, .FillModule > iframe > html {
+  background-color: transparent;
+}
+
+/*Menu Items*/
+.explorerContainer ul, .ApplicationPane ul, .FunctionToolbar ul {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+.explorerContainer ul li, .ApplicationPane ul li, .FunctionToolbar ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ApplicationPane ul li {
+  display: inline;
+}
+
+.FunctionToolbar ul li {
+  display: inline-block;
+  *display: inline;
+  vertical-align: top;
+}
+
+.explorerContainer a, .ApplicationPane a, .FunctionToolbar a, .explorerContainer a:visited, .ApplicationPane a:visited, .FunctionToolbar a:visited {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  color: #5B5D5E;
+  text-decoration: none;
+  min-height: 16px;
+  padding: 7px 5px 7px 5px;
+}
+
+.explorerList a:hover, .toolbarList a:hover {
+  background-color: #E2E4E3;
+}
+
+.explorerContainer img {
+  border: none;
+  margin-right: 3px;
+  margin-top: -12px;
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+}
+
+.ApplicationPane img {
+  vertical-align: middle;
+  border: none;
+  margin-right: 3px;
+  width: 24px;
+  height: 24px;
+}
+
+.FunctionToolbar img {
+  position: absolute;
+  margin-left: -16px;
+  left: 50%;
+  top: 3px;
+  border: none;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+}
+
+.explorerContainer a {
+  padding-left: 32px;
+}
+
+.ApplicationPane a {
+  padding: 0 5px;
+  display: inline-block;
+  line-height: 28px;
+  margin-top: 2px;
+}
+
+.FunctionToolbar a {
+  position: relative;
+  padding: 3px 5px;
+  padding-top: 35px;
+  margin: 0 1px;
+  height: 30px;
+  vertical-align: top;
+  text-align: center;
+  display: inline-block;
+  white-space: nowrap;
+  min-width: 42px;
+}
+
+.explorerContainer, .explorerList {
+  height: 100%;
+}
+
+/* User avatar */
+.UserAvatarImageContainer {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  margin-top: 17px;
+  margin-left: 18px;
+  float: left;
+  text-align: center;
+  border: 1px solid #999;
+  padding: 1px;
+}
+
+.UserAvatarImageContainer img {
+  max-height: 100px;
+  max-width: 100px;
+}
+
+.userInfoDetailsPanel {
+  position: absolute;
+  background: #fff;
+  width: 400px;
+  height: 140px;
+  display: none;
+  background: transparent url("images/graphics_sprite.png") 1px -525px;
+  background-repeat: no-repeat;
+  z-index: 100;
+}
+
+.userInfoDetailsPanel iframe, .WIPopup > iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: 10;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  /* IE8 transparency */
+}
+
+html.PageWithWin .userInfoDetailsPanel {
+  width: 382px;
+  /* WARNING: Both values should be corelated with .userInfoDetailsPanel width and height */
+  height: 130px;
+  background: transparent url("images/graphics_sprite.png") -9px -525px;
+}
+
+html.PageWithWin .UserAvatarImageContainer {
+  margin-left: 9px;
+}
+
+html.PageWithWin .contentPaneContainer {
+  background: transparent;
+  border: 0;
+  border-radius: 0px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.userInfoDetailsPanel .UserDetailsContent {
+  position: absolute;
+  z-index: 100;
+}
+
+.userInfoNameSelected {
+  color: #fff;
+}
+
+.UserDetailsInfoContainer {
+  font-size: 14px;
+  float: left;
+  margin-top: 14px;
+}
+
+.UserDetailsInfoContainer span {
+  display: block;
+  width: 200px;
+  text-align: left;
+}
+
+.detailsUserDisplayName {
+  font-weight: bold;
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+.detailsUserName, .detailsUserTitle {
+  color: #666;
+}
+
+.NoUserAvatar {
+  background: transparent url("images/graphics_sprite.png") -399px -516px no-repeat;
+}
+
+/*End of user avatar*/
+/*!
+ *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+
+/* makes the font 33% larger relative to the icon container */
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+
+/*checboxes and radios */
+/*END: checboxes and radios */
+/* jqModal style overrides */
+/* to override jqueryui icons for font icons */
+
+/* BING Maps overrides */
+
+.loginBody {
+  text-align: center;
+}
+
+.loginBody #ContentPane {
+  position: absolute;
+  top: 40%;
+  right: 50%;
+  margin-right: -270px;
+  margin-top: -200px;
+  width: 540px;
+  border: none;
+  left: auto;
+  bottom: auto;
+  background-color: #fff;
+  border: 1px #E2E4E3 solid;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  color: #000000;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.loginBody .form-addon {
+  display: table-cell;
+  width: 1%;
+  vertical-align: top;
+}
+
+.loginBody #formContainer {
+  width: 250px;
+  margin-top: 30px;
+}
+
+.loginBody .row {
+  width: 100%;
+  text-align: left;
+  clear: both;
+}
+
+.loginBody .controlRow {
+  display: table;
+  width: 100%;
+}
+
+.loginBody #loginLogo {
+  height: 290px;
+  width: 225px;
+  background-image: url("images/compass.png");
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-position: 50% 50%, center center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.loginBody #name {
+  font: normal normal 2em "3dsweb", arial, lucida, helvetica, sans-serif;
+  color: #005686;
+}
+
+.loginBody .LoginButtons, .loginBody .ChangeButtons {
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  height: 26px;
+}
+
+.loginBody h1#loginTitle {
+  color: #005686;
+  margin-top: 5px;
+}
+
+.loginBody #logoCol {
+  position: absolute;
+  top: 50%;
+  margin-top: -145px;
+}
+
+.loginBody #loginCol {
+  float: left;
+  border-left-color: #005686;
+  border-left-style: solid;
+  border-left-width: 1px;
+  padding-left: 25px;
+  padding-right: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  min-height: 275px;
+  margin-left: 225px;
+}
+
+.loginBody .ErrorMessageIcon {
+  display: block;
+  float: left;
+  position: relative;
+  top: 3px;
+  margin-right: 4px;
+}
+
+.loginBody .errorMsg {
+  line-height: 20px;
+  padding-bottom: 15px;
+}
+
+.loginBody input[type="submit"] {
+  min-width: 124px;
+  margin-right: 0px;
+}
+
+.loginBody label {
+  margin-bottom: 3px;
+}
+
+.loginBody input[type="text"], .loginBody input[type="password"], .loginBody select {
+  margin-bottom: 10px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 1px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 26px;
+  width: 100%;
+  display: table-cell;
+}
+
+.loginBody .input {
+  width: 100%;
+}
+
+.loginBody input.Primary {
+  margin-left: 0px;
+}
+
+.loginBody .change-btn {
+  width: 32px;
+  height: 26px;
+  padding-top: 3px;
+  padding-left: 7px;
+  border-style: border-box;
+  margin-right: 0px;
+}
+
+.loginBody .change-btn span {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin-top: 2px;
+}
+
+.loginBody #MessageBox {
+  min-height: 30px;
+  vertical-align: middle;
+  margin-top: -30px;
+  margin-bottom: 20px;
+}
+
+.loginBody .errorMsg, .loginBody .infoMsg, .loginBody .warningMsg {
+  background-color: transparent;
+  border-width: 0;
+  display: block;
+  float: left;
+  width: 220px;
+}
+
+.loginBody .errorMsg {
+  color: #c4282f !important;
+}
+
+.loginBody .warningMsg {
+  color: #f9cf3f;
+}
+
+.loginBody .infoMsg {
+  color: #8f96ae;
+}
+
+.loginBody .DropDownWrapper {
+  margin: 2px 2px 2px 0;
+  padding: 0px;
+  display: inline-block;
+  position: relative;
+  border: 1px solid #B4B6BA;
+  width: 100%;
+  background: #fff;
+  box-shadow: inset 0px 3px 5px 0px rgba(50, 50, 50, 0.05);
+  border-radius: 3px;
+  z-index: 0;
+  /* This hides dropdown button arrow in IE */
+  /* This hides focus around selected option in FF */
+}
+
+.loginBody .DropDownWrapper select.DropDown {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -moz-user-select: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  text-overflow: "";
+  margin: 0px;
+  padding: 0.25em 0.25em;
+  min-width: 50px;
+  padding-right: 28px;
+}
+
+.loginBody .DropDownWrapper select::-ms-expand {
+  display: none;
+}
+
+.loginBody .DropDownWrapper select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+.loginBody .DropDownWrapper:after {
+  background: #E2E4E3;
+  background: -moz-linear-gradient(#F9F9F9, #E2E4E3);
+  background: -webkit-linear-gradient(#F9F9F9, #E2E4E3);
+  background: -o-linear-gradient(#F9F9F9, #E2E4E3);
+  background: -ms-linear-gradient(#F9F9F9, #E2E4E3);
+  /*For IE10*/
+  background: linear-gradient(#F9F9F9, #E2E4E3);
+  border-left: solid 1px #B4B6BA;
+  content: "\f0d7";
+  font: normal normal normal 14px/1 FontAwesome;
+  color: #B4B6BA;
+  padding: 8px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1 !important;
+}
+
+.loginBody .DropDownWrapper:hover {
+  border-color: #5B5D5E;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.loginBody .DropDownWrapper:hover:after {
+  background-color: #F9F9F9;
+  background: #D1D4D4;
+  background: -moz-linear-gradient(#F1F1F1, #D1D4D4);
+  background: -webkit-linear-gradient(#F1F1F1, #D1D4D4);
+  background: -o-linear-gradient(#F1F1F1, #D1D4D4);
+  background: -ms-linear-gradient(#F1F1F1, #D1D4D4);
+  /*For IE10*/
+  background: linear-gradient(#F1F1F1, #D1D4D4);
+  border-left-color: #5B5D5E;
+  border-left-width: 1px;
+  border-left-style: solid;
+  color: #5B5D5E;
+}
+
+/*!
+ *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+
+/* makes the font 33% larger relative to the icon container */
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+
+/*checboxes and radios */
+/*END: checboxes and radios */
+/* jqModal style overrides */
+/* to override jqueryui icons for font icons */
+
+/* BING Maps overrides */
+
+body.aboutPage {
+  overflow: visible;
+  height: auto;
+  padding: 0;
+  border: 0;
+  width: 100%;
+  min-width: inherit;
+  font-size: 14px;
+  font-family: "3dsweb", arial, lucida, helvetica, sans-serif;
+  background-color: #fff;
+}
+
+body.aboutPage h2 {
+  margin-top: 0;
+  margin-bottom: 3px;
+  color: #5B5D5E;
+}
+
+body.aboutPage ul, body.aboutPage li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body.aboutPage .label {
+  color: #5B5D5E;
+}
+
+body.aboutPage .value {
+  color: #5B5D5E;
+}
+
+body.aboutPage .licensedModules {
+  text-indent: -2em;
+  padding-left: 2em;
+}
+
+body.aboutPage .hotfixList {
+  padding-left: 2em;
+}
+
+body.aboutPage .section {
+  margin-top: 20px;
+}
+
+body.aboutPage li {
+  text-indent: -2em;
+  padding-left: 2em;
+}
+
+.aboutModal {
+  font-family: "3dsweb", arial, lucida, helvetica, sans-serif;
+}
+
+.aboutModal iframe {
+  height: 100%;
+  width: 100%;
+  border: 0;
+  display: block;
+}
+
+.aboutModal .ui-widget-header {
+  background: transparent !important;
+  border: 0;
+  border-bottom-width: 1px;
+  border-bottom-color: #E2E4E3;
+  border-bottom-style: solid;
+  color: #5B5D5E;
+  font-size: 1.2em;
+  font-weight: normal;
+}
+
+.aboutModal .ui-dialog-titlebar-close {
+  outline: 0;
+  margin-right: 10px;
+}
+
+.aboutModal .ui-dialog-titlebar {
+  padding: 0.8em 0.66667em;
+}
+
+.aboutModal .ui-icon-closethick {
+  opacity: 0.5;
+}
+
+.aboutModal .ui-icon-closethick:hover {
+  opacity: 0.8;
+}
+
+.no-close .ui-dialog-titlebar-close {
+  display: none;
+}
+
+.mainReportPanel {
+  padding: 0 3px;
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+}
+
+.TitleContainer, .SubtitleContainer {
+  vertical-align: top;
+}
+
+.Subtitle {
+  margin-left: 1px;
+  /*Margin adjustment in comparision to Title above*/
+}
+
+#ReportTypeSelector {
+  margin-left: 1px;
+  /*Margin adjustment in comparision to Title above*/
+}
+
+#ReportTypeSelector select {
+  margin-right: 1px;
+  margin-left: 0px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+#ReportNavigatior {
+  margin-right: 10px;
+}
+
+.ControlsContainer a.btn {
+  padding: 4px 10px 4px 10px;
+  position: relative;
+  top: -1px;
+}
+
+#controlCell {
+  width: 4px;
+  background-color: #e2e4e3;
+  background-image: url("images/separator_v.png");
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d1d4d4;
+}
+
+#controlCell:hover {
+  border-color: #898b8e;
+  cursor: e-resize;
+}
+
+#FlexPartBody {
+  background: #fff;
+}
+
+.flexPartIFrame {
+  border: 0;
+}
+
+.UIServiceBody {
+  background: #fff;
+  overflow: hidden;
+  min-width: 0;
+  position: relative;
+}
+
+.UIServiceBody .contentPaneContainer {
+  padding: 0;
+}
+
+/* Flexpart reports double scrollbars */
+.UIServiceBody #UIRenderer > div > p {
+  display: none;
+}
+
+.UIServiceBody #UIRenderer + div {
+  height: 99%;
+}
+
+.UIServiceBody #UIRenderer > div.ReportErrorMessage {
+  height: auto;
+}
+
+.UIServiceBody #UIRenderer div.ReportContent {
+  text-align: center;
+}
+
+.UIServiceBody #UIRenderer .dialogzone {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#UIRenderer {
+  background: #fff;
+}
+
+#UIRenderer .ReportContent > div table[id*="_Menu"] {
+  position: relative;
+}
+
+.ReportContent iframe {
+  left: 0;
+  background-color: #fff;
+}
+
+#UIRenderer .RaportViewerWithouOverflow {
+  position: relative;
+  text-align: center;
+}
+
+#UIRenderer .RaportViewerWithouOverflow {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.UIServiceBody object {
+  top: 0;
+}
+
+.FDCContext .UIServiceBody .errorRendererMessage {
+  display: block;
+  padding-left: 4px;
+}
+
+#UIRenderer .PortalReportContent {
+  background-color: #F9F9F9;
+}
+
+.FDCContext #UIRenderer .PortalReportContent {
+  background-color: #F9F9F9;
+  padding: 2px;
+}
+
+.FDCContext .PortalReportContent iframe {
+  border: rgba(128, 128, 128, 0.2) 1px solid;
+}
+
+.FDCContext .viewInNewWindowLink {
+  display: none;
+}
+
+/*!
+ *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+
+/* makes the font 33% larger relative to the icon container */
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+
+/*checboxes and radios */
+/*END: checboxes and radios */
+/* jqModal style overrides */
+/* to override jqueryui icons for font icons */
+
+/* BING Maps overrides */
+
+.errorBody .contentPaneContainer {
+  padding: 40px 40px 40px 120px;
+  left: 0;
+  right: 0;
+  border: 0;
+  background: none;
+}
+
+.errorBody p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.errorBody .contentPaneContainer ul > li {
+  margin: 10px 0 15px -20px;
+  padding: 0 10px 0 22px;
+  list-style: none;
+  line-height: 16px;
+  background: url("images/icons_sprite.png") -127px -80px no-repeat;
+}
+
+.errorBody h, .errorBody h1, .errorBody h2, .errorBody h3 {
+  font-weight: normal;
+  margin-top: 0;
+  margin-top: 5px;
+}
+
+.errorBody h1 {
+  padding: 0;
+  border-color: #d4d4d4;
+  border-bottom-style: solid;
+  border-width: 1px;
+}
+
+.errorBody h3 {
+  margin-bottom: 30px;
+}
+
+.mmScreenUnloaded {
+  visibility: collapse;
+  margin-right: 40px;
+  padding: 40px 40px 40px 120px;
+  position: absolute;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.ErrorIconParent {
+  padding-left: 64px;
+  padding-top: 20px;
+}
+
+.errorBody #stackTrace {
+  margin: 10px 0 0 43px;
+  padding: 10px;
+  border: #d4d4d4 solid 1px;
+  font-family: Courier, MS Courier New, Prestige, Everson Mono, monospace;
+}
+
+select#headerPane, select#leftPane, select#rightPane, select#contentPane, select#toolbarPane {
+  height: 150px;
+  width: 150px;
+}
+
+.PortalAdministrationTabButton {
+  width: 225px;
+}
+
+/*!
+ *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+
+/* makes the font 33% larger relative to the icon container */
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+
+/*checboxes and radios */
+/*END: checboxes and radios */
+/* jqModal style overrides */
+/* to override jqueryui icons for font icons */
+[class^="icon-"], [class*=" icon-"] {
+  background: none !important;
+  background-image: none !important;
+  text-indent: 0 !important;
+  padding: .2em 0 0 .2em !important;
+}
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+  background: #005686;
+  border-color: #003C5A;
+  color: white;
+}
+
+.ui-dialog {
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.ui-dialog .ui-widget-header {
+  background: #005686 !important;
+  border: 0;
+  color: #fff;
+  padding: 1.5em;
+  font-weight: normal;
+}
+
+.ui-dialog .ui-widget-header button {
+  min-height: auto !important;
+  border-style: none !important;
+  background: transparent !important;
+  color: #fff;
+  outline: none;
+}
+
+.ui-dialog .ui-widget-header button .ui-icon.ui-icon-closethick {
+  background: transparent !important;
+  position: relative;
+  text-indent: 0;
+  height: 1em;
+  width: 1em;
+  font-size: 1.5em;
+  opacity: 1;
+  top: 0.3em;
+  left: 0;
+}
+
+.ui-dialog .ui-dialog-buttonpane button.ui-button {
+  margin: 0 2px;
+  border: 1px solid #000;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-family: arial, lucida, helvetica, sans-serif;
+  display: inline-block;
+  text-align: center;
+  border-radius: 3px;
+  padding: 0.25em 0.75em 0.25em 0.75em;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border-color: #003C5A;
+  color: #fff;
+  background: #0066a0;
+  background: -moz-linear-gradient(#0087d3, #0066a0);
+  background: -webkit-linear-gradient(#0087d3, #0066a0);
+  background: -o-linear-gradient(#0087d3, #0066a0);
+  background: -ms-linear-gradient(#0087d3, #0066a0);
+  /*For IE10*/
+  background: linear-gradient(#0087d3, #0066a0);
+}
+
+.ui-dialog .ui-dialog-buttonpane button.ui-button:hover:not([disabled]) {
+  border-color: #003C5A;
+  color: #fff;
+  background: #00466d;
+  background: -moz-linear-gradient(#0066a0, #00466d);
+  background: -webkit-linear-gradient(#0066a0, #00466d);
+  background: -o-linear-gradient(#0066a0, #00466d);
+  background: -ms-linear-gradient(#0066a0, #00466d);
+  /*For IE10*/
+  background: linear-gradient(#0066a0, #00466d);
+}
+
+.ui-dialog .ui-dialog-buttonpane button.ui-button:hover:active:not([disabled]), .ui-dialog .ui-dialog-buttonpane button.ui-button:active:not([disabled]) {
+  border-color: #003C5A;
+  color: #fff;
+  background: #0066a0;
+  background: -moz-linear-gradient(#00466d, #0066a0);
+  background: -webkit-linear-gradient(#00466d, #0066a0);
+  background: -o-linear-gradient(#00466d, #0066a0);
+  background: -ms-linear-gradient(#00466d, #0066a0);
+  /*For IE10*/
+  background: linear-gradient(#00466d, #0066a0);
+}
+
+.ui-dialog .ui-dialog-buttonpane button.ui-button span {
+  padding: 0.25em 0.75em 0.25em 0.75em;
+}
+
+/* BING Maps overrides */
+.NavBar_modeSelectorControlContainer .NavBar_button {
+  border-color: #B4B6BA !important;
+  border-style: solid !important;
+  border-width: 1px !important;
+  background-color: transparent !important;
+  font-family: "3dsweb",arial,lucida,helvetica,sans-serif !important;
+  font-size: 12px !important;
+  border-radius: 2px;
+}
+
+.dark.MicrosoftMap .stylev2.MicrosoftNav .currentIcon:hover, .dark.MicrosoftMap .stylev2.MicrosoftNav .groupContainer:hover {
+  background-color: #f0f4f4 !important;
+}
+
+.NavBar_typeButtonLabel .text {
+  color: #5B5D5E !important;
+}
+
+.NavBar_typeButtonLabel {
+  color: #5B5D5E !important;
+}
+
+.stylev2.MicrosoftNav .OverlaysTL {
+  height: 30px !important;
+  background: transparent !important;
+  border-bottom: 0px none #d4d4d4 !important;
+}
+
+.Print {
+  display: inline-block !important;
+  height: 29px !important;
+}
+
+.path {
+  font-family: "3dsweb",arial,lucida,helvetica,sans-serif !important;
+  font-size: 12px !important;
+}
+
+.pathNode {
+  color: #5B5D5E !important;
+}
+
+.pathNode:hover {
+  background-color: #f0f4f4 !important;
+}
+
+.MicrosoftMap .pathNode {
+  vertical-align: top !important;
+}
+
+.NavBar_typeTitle {
+  font-family: "3dsweb",arial,lucida,helvetica,sans-serif !important;
+}
+
+.NavBar_typeDesc {
+  font-family: "3dsweb",arial,lucida,helvetica,sans-serif !important;
+  color: #005686 !important;
+}
+
+.BreadcrumbContainer {
+  border-color: #b4b6ba !important;
+  border-style: solid !important;
+  border-width: 2px !important;
+  background-color: #f0f4f4 !important;
+}
+
+.NavBar_checkControl {
+  font-family: "3dsweb",arial,lucida,helvetica,sans-serif !important;
+  font-size: 12px !important;
+  color: #5B5D5E !important;
+}
+
+#personalizationSidebar .personalizationHeader {
+  padding: 5px;
+}
+
+#personalizationSidebar .Section {
+  font-weight: normal;
+  font-size: 14px;
+  color: #333;
+}
+
+#personalizationMain {
+  display: block;
+  height: 100%;
+}
+
+#personalizationMain .content {
+  width: 100%;
+  background: transparent;
+}
+
+.personalizationMenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#personalizationMain .headerName {
+  height: 40px;
+}
+
+.personalizationMenu li a {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  color: #5B5D5E;
+  text-decoration: none;
+  min-height: 16px;
+  padding: 7px 5px 7px 5px;
+}
+
+.personalizationMenu li a:hover {
+  background: url("images/graphics_sprite.png") 0 -430px;
+}
+
+.PersonalizationGridProfileManipulators {
+  vertical-align: bottom;
+}
+
+.PersonalizationGridProfileManipulators a {
+  text-decoration: none;
+}
+
+#personalizationSidebar, #personalizationEditorWrap {
+  background-color: #fff;
+  border: 1px solid #E2E4E3;
+  border-radius: 3px;
+  margin-top: 1px;
+  /* Just to make shadow visible */
+  top: 0px;
+  bottom: 0px;
+}
+
+#personalizationSidebar {
+  position: absolute;
+  width: 250px;
+  bottom: 5px;
+  top: 0;
+  left: 2px;
+}
+
+#personalizationEditorWrap {
+  position: absolute;
+  top: 0;
+  bottom: 5px;
+  right: 2px;
+  left: 257px;
+  padding: 0 0 15px 6px;
+}
+
+#personalizationEditor {
+  position: absolute;
+  overflow: auto;
+  top: 0;
+  left: 6px;
+  right: 0;
+  bottom: 50px;
+}
+
+#personalizationEditorMenu {
+  text-align: right;
+  margin: 10px 0 10px 0;
+}
+
+#personalizationScroll {
+  position: absolute;
+  top: 5px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+}
+
+/* Grid Containers */
+.GridWrap {
+  /* Generic class */
+  margin: 20px 20px 20px 0;
+  width: 665px;
+}
+
+.GridWrap .header {
+  font-size: 17px;
+  margin: 5px 5px 5px 0;
+}
+
+.PersonalizationGridWrap {
+  margin-top: 0;
+}
+
+.ColumnsEditorWrap input[type="text"] {
+  width: 540px;
+}
+
+.SettingsValueLabel {
+  width: 100px;
+}
+
+#PersonalizeGridProfiles table {
+  width: 710px;
+}
+
+#PersonalizeGridProfiles .GridStyle td, #PersonalizeGridProfiles .GridStyle th {
+  line-height: 20px;
+}
+
+/* End of Grid Containers */
+/* Localization */
+#LocalizationForm div.row {
+  margin: 5px 0;
+}
+
+/* End of Localization */
+.SubmitButtonsWrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #F9F9F9;
+}
+
+.personalizationBody .contentPaneContainer {
+  background: transparent;
+  border: 0;
+  border-radius: 0px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+a.personalizationLinkButton {
+  display: block;
+  text-indent: 10px;
+}
+
+/* Set default width for buttons to standarize width */
+#personalizationMain input[type="submit"] {
+  min-width: 100px;
+}
+
+#personalizationMain .Title {
+  line-height: 32px;
+}
+
+/*!
+ *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("fonts/fontawesome-webfont.eot");
+  src: url("fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/fontawesome-webfont.woff") format("woff"), url("fonts/fontawesome-webfont.ttf") format("truetype"), url("fonts/fontawesome-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fa, .ui-dialog .ui-widget-header button {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* makes the font 33% larger relative to the icon container */
+.fa-lg {
+  font-size: 1.33333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-fw {
+  width: 1.28571em;
+  text-align: center;
+}
+
+.fa-ul {
+  padding-left: 0;
+  margin-left: 2.14286em;
+  list-style-type: none;
+}
+
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  position: absolute;
+  left: -2.14286em;
+  width: 2.14286em;
+  top: 0.14286em;
+  text-align: center;
+}
+
+.fa-li.fa-lg {
+  left: -1.85714em;
+}
+
+.fa-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eee;
+  border-radius: .1em;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.fa.pull-left, .ui-dialog .ui-widget-header button.pull-left {
+  margin-right: .3em;
+}
+
+.fa.pull-right, .ui-dialog .ui-widget-header button.pull-right {
+  margin-left: .3em;
+}
+
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+.fa-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical {
+  filter: none;
+}
+
+.fa-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+
+.fa-stack-1x, .fa-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.fa-stack-1x {
+  line-height: inherit;
+}
+
+.fa-stack-2x {
+  font-size: 2em;
+}
+
+.fa-inverse {
+  color: #fff;
+}
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+.fa-check:before {
+  content: "";
+}
+
+.fa-close:before, .ui-dialog .ui-widget-header button .ui-icon.ui-icon-closethick:before,
+.fa-times:before {
+  content: "";
+}
+
+.fa-download:before {
+  content: "";
+}
+
+.fa-list-alt:before {
+  content: "";
+}
+
+.fa-pencil:before {
+  content: "";
+}
+
+.fa-edit:before,
+.fa-pencil-square-o:before {
+  content: "";
+}
+
+.fa-check-square-o:before {
+  content: "";
+}
+
+.fa-step-backward:before {
+  content: "";
+}
+
+.fa-fast-backward:before {
+  content: "";
+}
+
+.fa-fast-forward:before {
+  content: "";
+}
+
+.fa-step-forward:before {
+  content: "";
+}
+
+.fa-chevron-left:before {
+  content: "";
+}
+
+.fa-chevron-right:before {
+  content: "";
+}
+
+.fa-plus-circle:before {
+  content: "";
+}
+
+.fa-minus-circle:before {
+  content: "";
+}
+
+.fa-check-circle:before {
+  content: "";
+}
+
+.fa-plus:before {
+  content: "";
+}
+
+.fa-chevron-up:before {
+  content: "";
+}
+
+.fa-chevron-down:before {
+  content: "";
+}
+
+.fa-folder-open:before {
+  content: "";
+}
+
+.fa-square-o:before {
+  content: "";
+}
+
+.fa-save:before,
+.fa-caret-down:before {
+  content: "";
+}
+
+.fa-caret-up:before {
+  content: "";
+}
+
+.fa-sort:before {
+  content: "";
+}
+
+.fa-sort-desc:before {
+  content: "";
+}
+
+.fa-sort-asc:before {
+  content: "";
+}
+
+.fa-rotate-left:before,
+.fa-undo:before {
+  content: "";
+}
+
+.fa-plus-square:before {
+  content: "";
+}
+
+.fa-minus-square:before {
+  content: "";
+}
+
+.fa-minus-square-o:before {
+  content: "";
+}
+
+.fa-plus-square-o:before {
+  content: "";
+}
+
+.fa-trash:before {
+  content: "";
+}

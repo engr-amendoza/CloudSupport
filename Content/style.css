@@ -1,0 +1,301 @@
+#separator {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    bottom: 10%;
+    height: 100%
+    border-left: 5px solid red;
+}
+
+#generate {
+    width: 200px;
+    height: 200px;
+    background: #0088cc;
+    padding: 2%;
+    display: table-cell;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+
+#userInput {
+    position: absolute;
+    top: 50px;
+    right: 50%;
+    margin-left: -50px;
+    width: 800px;
+    height: 800px;
+    /*border-color: red;*/
+    border-width: thick;
+    display: block;
+    /*display: flex;*/
+}
+
+#generatedPreview {
+    position: absolute;
+    top: 50px;
+    left: 55%;
+    margin-left: -50px;
+    width: 800px;
+    height: 800px;
+    /*border-color: dodgerblue;*/
+    border-width: thick;
+    /*display: flex;*/
+}
+
+
+/***** HTML TAGS *****/
+
+iframe {
+    /*
+    height: 97%;
+    width: 99%;
+        */
+    position: relative;
+    width: 99%;
+    height: 88%;
+    top: 1px;
+    left: 4px;
+}
+
+textarea {
+    resize: none;
+}
+
+/**** JQUERY Style ****/
+
+body {
+    font-family: "Trebuchet MS", "Helvetica", "Arial", "Verdana", "sans-serif";
+    font-size: 62.5%;
+}
+
+/**** TAB STYLE ****/
+
+/* Style the tab */
+
+div.tab {
+    overflow: hidden;
+    border: 8px solid #005386;
+    background-color: #005386;
+    margin-left: 0px;
+}
+
+    /* Style the buttons inside the tab */
+div.tab button {
+        background-color: #005386 !important;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        /*padding: 14px 16px;*/
+        transition: 0.3s;
+        color: white;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+            background-color: #005386 !important; /*#ddd;*/
+            opacity: 0.5;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+            background-color: #006eb2 !important; /*#ccc;*/
+}
+
+/* Style the tab content */
+.tabcontent {
+    /*position: absolute;*/ /*ADDED*/
+    display: none;
+    /*padding: 6px 12px;*/
+    /*border: 2px solid #005386;*/ /*HIDDEN 06/08/17*/
+    /*border-top: medium;*/
+    width: 95%; /*auto;*/
+    height: 95%; /*auto;*/
+}
+
+
+.ghost-button {
+    background-color: #005386 !important;
+    border: none;
+    color: white;
+    padding: 6px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+/** Controls.css snippet */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #5b5d5e;
+    background-color: #f4f5f6;
+    overflow: hidden;
+}
+
+#header {
+    font-family: '3dsweb', Arial, lucida, helvetica, sans-serif;
+    color: #fff;
+    position: fixed;
+    z-index: 50;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 41px;
+    line-height: 41px;
+    background-color: #005386;
+    border-top: solid 1px #6599b6;
+    border-bottom: solid 1px #004971;
+    box-shadow: 0px 1px 0px 0px rgba(155,155,155,0.3);
+}
+
+#logo {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    margin-top: 5px;
+    margin-left: 16px;
+    background: transparent url('images/sprite.png') no-repeat;
+}
+
+#title {
+    text-align: left;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 0px 3px 0px 70px;
+}
+
+#header .toolbar {
+    position: absolute;
+    top: 4px;
+    right: 8px;
+    display: inline-flex;
+    display: -webkit-inline-flex;
+}
+
+.toolbarButton {
+    background-image: url('images/sprite.png');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 5px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+    .toolbarButton:hover {
+        background-color: #f4f5f6;
+        border-color: #f4f5f6;
+    }
+
+h, h1, h2, h3 {
+    font-weight: normal;
+    color: #005386;
+    margin: 0px;
+}
+
+h1 {
+    margin-top: 16px;
+}
+
+h3 {
+    margin-top: 8px;
+}
+
+
+/** New Buttons **/
+
+.menuItem {
+    margin: 4px;
+    float: left;
+    width: 552px;
+}
+
+.menuItem td {
+    float: left;
+    width: 170px;
+    margin: 4px;
+    background-color: white;/*#EFEFEF;*/
+    border-radius: 4px;
+    border: 1px solid #D0D0D0;
+    overflow: auto;
+}
+
+.menuItem td label {
+        text-align: center;
+        font-size: 22px;
+        /* padding: 13px 0px; */
+        display: block;
+}
+
+.menuItem td input {
+        position: absolute;
+        top: -20px;
+}
+
+.menuItem input:checked + label {
+    background-color: #005386; /*#404040;*/
+    color: #F7F7F7;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+
+
+/*
+#refresh {
+    position: absolute !important; 
+    bottom:0 !important;
+}*/
+
+/*** OLD ***/
+/*
+.menuItem {
+    margin: 4px;
+    float: left;
+}
+
+    .menuItem label {
+        float: left;
+        width: 170px;
+        margin: 4px;
+        background-color: #EFEFEF;
+        border-radius: 4px;
+        border: 1px solid #D0D0D0;
+        overflow: auto;
+    }
+
+        .menuItem label span {
+            text-align: center;
+            font-size: 22px;
+           
+            display: block;
+        }
+
+        .menuItem label input {
+            position: absolute;
+            top: -20px;
+        }
+
+    .menuItem input:checked + span {
+        background-color: #005386; 
+        color: #F7F7F7;
+    }
+    */
+/*
+input[type="radio"] {
+    display: none;
+}
+    */
